@@ -3336,3 +3336,251 @@ a{
       grid-area: span 1 / span 1 / span 1 / span 1;
     }
   }
+#mar-left{
+  padding-left: 7rem;
+}
+
+/* For larger screens (desktop) */
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 7fr; /* 3/7 ratio for columns */
+  column-gap: 20px; /* Adjust the gap between columns */
+}
+
+.text-column {
+  margin-left: 20px; /* Add margin to the left of the text column */
+}
+
+
+
+/* For mobile view */
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column layout for mobile (1:1 ratio) */
+  }
+
+  .text-column {
+    margin-left: 0; /* Remove margin on mobile view */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+  }
+
+  #mar-left{
+    padding-left: .5rem;
+  }
+  .image-column{
+
+    padding: 1rem;
+    margin: 0 auto !important;
+  }
+  .splide__slide img {
+
+    width: 100% !important;
+    height: auto;
+  }
+  .img_box img{
+    object-fit: contain;
+  }
+  
+  .text-column{
+    margin-left: 1rem;
+  }
+  .custom-button{
+    padding: .5rem !important;
+    font-size: .7rem !important;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.img_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 300px; /* Adjust this value to your desired height */
+/* Margin on the right side */
+margin:  auto !important;
+
+}
+.img_box img:hover{
+  cursor: pointer;
+}
+.image-column{
+  margin-left: 1rem;
+  margin-right: 4rem;
+}
+.img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+
+
+}
+
+.splide__pagination__page {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20%;
+  margin: 0 5px;
+  background-color: rgb(255, 255, 255) !important; /* Color for inactive dots */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.splide__pagination__page.splide__pagination__page--active {
+  background-color: black !important;
+}
+
+/* Adjusted styles for custom pagination theme */
+.splide__pagination--custom {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.splide__pagination--custom .splide__pagination__page {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2rem;
+  margin: 0 5px;
+  background-color: #000000; /* Color for inactive dots (white) */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.splide__pagination--custom .splide__pagination__page.splide__pagination__page--active {
+  background-color: #000000; /* Color for active dot (black) */
+}
+.splide__slide {
+  transition: opacity 0.5s ease; /* Define the transition */
+}
+
+.splide__slide.splide__slide--clone {
+  opacity: 0; /* Hide cloned slides initially */
+}
+
+.custom-button{
+  display: inline-flex;
+padding: 1rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+border: 3px solid #000;
+color: #000000;
+background-color: white;
+font-family: Montserrat;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+
+}
+.custom-button:hover{
+  
+border: 3px solid #000;
+color: whitesmoke;
+background-color: black;
+
+
+}
+
+
+
+
+
+.footer {
+	background-color: black;
+	padding: 30px 5%;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 33%;
+	padding: 0 15px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 40px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+
