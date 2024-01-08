@@ -3341,6 +3341,7 @@ a{
   }
 #mar-left{
   padding-left: 7rem;
+  margin-top: 3.5rem!important;
 }
 
 /* For larger screens (desktop) */
